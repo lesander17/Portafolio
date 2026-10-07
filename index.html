@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="es">
 
 <head>
     <meta charset="utf-8" />
     <title>Portafolio web: Frank Leon Garcia</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <meta content="" name="description" />
+    <meta content="Frank Leon Garcia: servicios freelance de análisis de datos, dashboards en Power BI e ingeniería de datos. Conoce mis proyectos y conversemos sobre tu negocio." name="description" />
     <meta content="" name="keywords" />
     <meta content="" name="author" />
     <!--[if lt IE 9]>
@@ -25,6 +25,7 @@
     <!-- color scheme -->
     <link id="colors" href="css/colors/scheme-03.css" rel="stylesheet" type="text/css" />
     <link href="css/coloring.css" rel="stylesheet" type="text/css" />
+    <link href="css/freelance-home.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -52,7 +53,7 @@
                             <div class="align-self-center ml-auto header-col-mid">
                                 <!-- mainmenu begin -->
                                 <ul id="mainmenu" class="scrollnav">
-                                    <li><a href="#section-resume">Inicio</a></li>
+                                    <li><a href="#section-main">Inicio</a></li>
                                     <li></li>
                                     <li><a href="#section-about">Sobre mi</a></li>
                                     <li></li>
@@ -86,34 +87,37 @@
         <div class="no-bottom no-top dark">
             <div id="top"></div>
             <!-- section begin -->
-            <section id="section-main" class="vertical-center text-light" data-bgimage="url(images/background/portada.jpg) top">
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-md-6">
-
-                            <div class="typed-words wow fadeInRight" data-wow-delay=".2s">
-                                <div class="typed-strings">
-                                    <p>Bienvenido a mi portafolio web</p>
-                                    <p>Bienvenido!</p>                                                
-                                    <p>Welcome!</p>
-
-                                </div>
-                                <div class="typed"></div>
+            <section id="section-main" class="text-light freelance-home" aria-labelledby="hero-title">
+                <div class="container hero-container">
+                    <div class="hero-layout">
+                        <div class="hero-copy">
+                            <p class="hero-eyebrow"><span></span> SOLUCIONES DE DATOS · FREELANCE</p>
+                            <p class="hero-intro">Hola, soy Frank Leon Garcia</p>
+                            <h1 id="hero-title">Tus datos tienen potencial.<br><em>Hagámoslo realidad.</em></h1>
+                            <p class="hero-description">Te ayudo a transformar datos dispersos en información clara, automatizar reportes y construir procesos de datos que tu negocio pueda aprovechar.</p>
+                            <div class="hero-roles"><span>Analista de datos</span><span>Ingeniería de datos</span><span>Business Intelligence</span></div>
+                            <div class="hero-actions">
+                                <a class="hero-button hero-primary" id="hero-contact" href="https://wa.me/51992148036?text=Hola%20Frank%2C%20quiero%20conversar%20sobre%20un%20proyecto%20de%20datos." target="_blank" rel="noopener noreferrer">Conversemos sobre tu proyecto <span aria-hidden="true">→</span></a>
+                                <a class="hero-button hero-secondary scroll-to" href="#section-portafolio">Ver mis proyectos <span aria-hidden="true">→</span></a>
                             </div>
-                            <div class="spacer-single"></div>
-                            <h1 class="wow fadeInRight" data-wow-delay=".4s">
-                                <h2>Hola! Soy Frank Leon</h2></span>
-                            <span class="underline">    
-                                <h3>Bachiller en Ingenieria de Sistemas</h3>
-                            </span>
-                            <span class="underline">    
-                                <h4>Universidad Nacional del Callao</h4>
-                            </span>    
-                            <div class="spacer-single"></div>
-                            <a href="https://drive.google.com/file/d/12JYLvSP1OgUhAI3OIzenjxYu0k64R_cI/view?usp=sharing" class="btn-custom light wow fadeInRight scoll-to" data-wow-delay=".6s">Ver CV</a>
+                            <div class="hero-credentials">Bachiller en Ingeniería de Sistemas · UNAC <span aria-hidden="true">/</span> <a href="https://drive.google.com/file/d/12JYLvSP1OgUhAI3OIzenjxYu0k64R_cI/view?usp=sharing" target="_blank" rel="noopener noreferrer">Ver CV →</a> <span aria-hidden="true">/</span> <a href="#section-resume" class="scroll-to">Mi trayectoria →</a></div>
                         </div>
-
-                        <!--<div class="col-md-6 sm-hide"><blockquote class="text-light pull-right wow fadeInRight" data-wow-delay=".6s">Let's Rock!</blockquote></div>-->
+                        <div class="hero-visual">
+                            <div class="hero-photo-frame"><img src="images/misc/perfil-profesional-trigueno.png" alt="Frank Leon Garcia, profesional freelance de análisis e ingeniería de datos" width="1254" height="1254" fetchpriority="high"></div>
+                            <div class="hero-photo-caption"><span class="hero-monogram">FL</span><div><strong>Frank Leon Garcia</strong><span>De los datos a las decisiones.</span></div><a href="https://www.linkedin.com/in/frankleongarcia/" target="_blank" rel="noopener noreferrer" aria-label="Ver el perfil de Frank en LinkedIn"><i class="fa fa-linkedin" aria-hidden="true"></i></a></div>
+                        </div>
+                    </div>
+                    <div class="hero-service-picker">
+                        <div class="hero-picker-heading"><span class="hero-eyebrow">¿QUÉ NECESITA TU NEGOCIO?</span><p>Encuentra una solución para tu siguiente paso.</p></div>
+                        <div class="hero-service-tabs" role="tablist" aria-label="Servicios de datos">
+                            <button id="service-analysis" type="button" role="tab" aria-selected="true" aria-controls="hero-service-panel" data-service="analysis">01 <span>Análisis y dashboards</span></button>
+                            <button id="service-engineering" type="button" role="tab" aria-selected="false" aria-controls="hero-service-panel" tabindex="-1" data-service="engineering">02 <span>Ingeniería de datos</span></button>
+                            <button id="service-automation" type="button" role="tab" aria-selected="false" aria-controls="hero-service-panel" tabindex="-1" data-service="automation">03 <span>Automatización</span></button>
+                        </div>
+                        <div id="hero-service-panel" class="hero-service-panel" role="tabpanel" aria-labelledby="service-analysis" tabindex="0">
+                            <div aria-live="polite" aria-atomic="true"><h2 id="hero-service-title">Entiende qué está pasando en tu negocio.</h2><p id="hero-service-description">Dashboards en Power BI y Looker Studio para explorar ventas, productos y desempeño con indicadores claros.</p><span id="hero-service-tools">Power BI · Looker Studio · SQL</span></div>
+                            <a id="hero-service-contact" href="https://wa.me/51992148036?text=Hola%20Frank%2C%20necesito%20un%20dashboard%20o%20an%C3%A1lisis%20de%20datos%20para%20mi%20negocio." target="_blank" rel="noopener noreferrer">Quiero un dashboard <span aria-hidden="true">→</span></a>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -720,9 +724,9 @@
     <script src="js/enquire.min.js"></script>
     <script src="js/jquery.stellar.min.js"></script>
     <script src="js/jquery.plugin.js"></script>
-    <script src="js/typed.js"></script>
-    <script src="js/typed-custom.js"></script>
+
     <script src="js/designesia.js"></script>
+    <script src="js/freelance-home.js"></script>
     
 </body>
 
